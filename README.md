@@ -11,7 +11,7 @@ Current leiningen dependency:
 [piotr-yuxuan/gzip-util "0.2.0"]
 ```
 
-Then two methods are available:
+Then three methods are available:
 
 ```clojure
 ;; gzip a string:
@@ -20,6 +20,8 @@ Then two methods are available:
 ;; un-gzip a java.io.InputStream, returning a UTF-8 encoded string:
 (gzipped-input-stream->str input-stream "UTF-8")
 
+;; un-gzip a java byte[], returning a UTF-8 encoded string:
+(gzipped-bytes->str input-stream "UTF-8")
 ```
 
 ## License
