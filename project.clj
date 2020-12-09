@@ -1,4 +1,4 @@
-(defproject piotr-yuxuan/gzip-util "0.1.0"
+(defproject piotr-yuxuan/gzip-util "0.2.0"
   :description "Some utility functions for compressing/uncompressing data using gzip"
   :url "http://github.com/gphil/gzip-util"
   :scm {:name "git" :url "http://github.com/piotr-yuxuan/gzip-util.git"}
