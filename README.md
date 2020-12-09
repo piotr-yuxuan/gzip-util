@@ -8,7 +8,7 @@ java.util.zip.GZIPInputStream and GZIPOutputStream under the hood.
 Current leiningen dependency:
 
 ```clojure
-[piotr-yuxuan/gzip-util "0.1.0"]
+[piotr-yuxuan/gzip-util "0.2.0"]
 ```
 
 Then two methods are available:
