@@ -10,4 +10,13 @@
       (is (= test-str
              (gzipped-input-stream->str
                (ByteArrayInputStream.
-                 (str->gzipped-bytes test-str)) "UTF-8"))))))
+                 (str->gzipped-bytes test-str))
+               "UTF-8")
+             (gzipped-input-stream->str
+               (ByteArrayInputStream.
+                 (str->gzipped-bytes test-str)))
+             (gzipped-bytes->str
+               (str->gzipped-bytes test-str)
+               "UTF-8")
+             (gzipped-bytes->str
+               (str->gzipped-bytes test-str)))))))
