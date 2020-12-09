@@ -8,18 +8,16 @@ java.util.zip.GZIPInputStream and GZIPOutputStream under the hood.
 Current leiningen dependency:
 
 ```clojure
-
-[gzip-util "0.1.0-SNAPSHOT"]
+[piotr-yuxuan/gzip-util "0.1.0"]
 ```
 
+Then two methods are available:
+
 ```clojure
-
 ;; gzip a string:
-
 (str->gzipped-bytes "string to compress")
 
 ;; un-gzip a java.io.InputStream, returning a UTF-8 encoded string:
-
 (gzipped-input-stream->str input-stream "UTF-8")
 
 ```
